@@ -4,6 +4,8 @@
 
 leetcode用 python環境
 
+![LeetCode Stats](https://leetcard.jacoblin.cool/miyakoshi-3854)
+
 ## 🛠️環境構築
 
 ### 1. [`mise`](https://mise.jdx.dev/getting-started.html)をインストールする
