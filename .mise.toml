@@ -4,6 +4,7 @@ uv = "0.10.12"
 [tasks.setup]
 run = """
 uv sync
+chmod +x shell/*.sh
 ./shell/init.sh
 """
 
