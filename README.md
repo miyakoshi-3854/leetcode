@@ -1,10 +1,10 @@
 # leetcode
 
+![LeetCode Stats](https://leetcard.jacoblin.cool/miyakoshi-3854)
+
 ## 📝概要
 
 leetcode用 python環境
-
-![LeetCode Stats](https://leetcard.jacoblin.cool/miyakoshi-3854)
 
 ## 🛠️環境構築
 
