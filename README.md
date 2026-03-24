@@ -32,7 +32,7 @@ mise run p
 mise run sv
 ```
 
-問題番号 (例: `a`) を入力すると:
+問題 (例: `1.aaa-bbb`) を入力すると:
 - `_result/{problem}/main.py` に保存
 - 同じ `problem` を解いた場合に、`problem_2` のように保存される
 - 自動で `git commit`
