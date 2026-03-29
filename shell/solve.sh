@@ -38,4 +38,4 @@ echo -e "${GREEN}🔄 Resetting main.py from template${RESET}"
 cp _template/main.py ./main.py
 
 echo ""
-echo -e "${GREEN}✅ Done: ${dir##*/}${RESET}"
+echo -e "${GREEN}✅ Done: ${dir##*/}/${dest##*/}${RESET}"
