@@ -24,6 +24,8 @@ list != set(list)を利用する
 先に3x3の要素を2重配列持っておく
 
 """
+
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         rows = [set() for _ in range(len(board))]
@@ -35,13 +37,11 @@ class Solution:
                 val = board[i][j]
                 if val == ".":
                     continue
-                
+
                 box_idx = (i // 3) * 3 + (j // 3)
-                if (val in rows[i] or
-                    val in cols[j] or
-                    val in boxes[box_idx]):
+                if val in rows[i] or val in cols[j] or val in boxes[box_idx]:
                     return False
-                
+
                 rows[i].add(val)
                 cols[j].add(val)
                 boxes[box_idx].add(val)

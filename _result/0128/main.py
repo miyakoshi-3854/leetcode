@@ -18,6 +18,8 @@ iterable in nums が成立する間のカウントを[]とかで記憶
 
 
 """
+
+
 class Solution:
     def longestConsecutive(self, nums: list[int]) -> int:
         num_set = set(nums)

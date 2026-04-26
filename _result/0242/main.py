@@ -14,5 +14,5 @@ class Solution:
         for value in char_count.values():
             if value != 0:
                 return False
-        
+
         return True

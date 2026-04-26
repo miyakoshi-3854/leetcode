@@ -17,7 +17,7 @@ class Solution:
             head.next = None
             stack.append(head)
             head = memory
-            
+
             if len(stack) == k:
                 for _ in range(k):
                     reverse.next = stack.pop()

@@ -15,7 +15,9 @@ valueが大きいもののkeyをかえしたいけど、指定の仕方がわか
 
 outputがlistの中に入る形になってるな
 """
+
 import heapq
+
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -25,5 +27,5 @@ class Solution:
             d[n] += 1
 
         ans = [x[0] for x in heapq.nlargest(k, d.items(), key=lambda x: x[1])]
-        
+
         return ans

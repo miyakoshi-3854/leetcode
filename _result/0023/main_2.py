@@ -5,7 +5,9 @@
 #         self.next = next
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
-        def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        def mergeTwoLists(
+            list1: Optional[ListNode], list2: Optional[ListNode]
+        ) -> Optional[ListNode]:
             dummy = ListNode()
             cur = dummy
             while list1 and list2:

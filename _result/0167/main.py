@@ -14,6 +14,8 @@ set使えそう
 けど、定数化はメモリ食うし、set(numbers)は長いから好まない
 → 同じ数字来た時に早期リターンする
 """
+
+
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         l, r = 0, len(numbers) - 1

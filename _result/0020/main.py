@@ -22,7 +22,7 @@ class Solution:
 
             if not stack and char in close_bracket:
                 return False
-            elif open_bracket.index(stack[- 1]) == close_bracket.index(char):
+            elif open_bracket.index(stack[-1]) == close_bracket.index(char):
                 stack.pop()
                 continue
             else:

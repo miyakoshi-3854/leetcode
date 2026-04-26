@@ -1,9 +1,10 @@
 from typing import List
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         return self.check(nums, target)
-        
+
     # targetからlist[i]を引いた数が、list[j]に一致するかをみる
     def check(self, nums: list[int], target: int):
         for i in range(len(nums)):

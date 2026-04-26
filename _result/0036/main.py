@@ -24,6 +24,8 @@ list != set(list)を利用する
 先に3x3の要素を2重配列持っておく
 
 """
+
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         digits = []

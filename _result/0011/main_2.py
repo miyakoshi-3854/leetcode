@@ -14,6 +14,8 @@ sortしたら情報が失われる
 全部計算して、大きければ上書きするみたいな感じか？
 
 """
+
+
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         max_water = 0

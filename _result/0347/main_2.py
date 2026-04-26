@@ -15,6 +15,8 @@ valueが大きいもののkeyをかえしたいけど、指定の仕方がわか
 
 outputがlistの中に入る形になってるな
 """
+
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         d = defaultdict(int)

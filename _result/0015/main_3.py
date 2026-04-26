@@ -13,6 +13,8 @@ sortしたら大きく、小さくを操作できるんだよね
 メモリ制限が超過してしまった。どうしよう
 
 """
+
+
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums.sort()

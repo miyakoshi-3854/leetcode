@@ -12,7 +12,7 @@ class Solution:
             result.append(current.val)
             current = current.next
 
-        result.pop(- n)
+        result.pop(-n)
 
         # create ListNode
         node = None

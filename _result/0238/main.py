@@ -15,6 +15,8 @@ think
 pythonの[i:j]みたいなのをうまく使えばiを除外できそうじゃない？
 
 """
+
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)

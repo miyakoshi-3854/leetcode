@@ -1,9 +1,10 @@
 from functools import lru_cache
 
+
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         # "."はany char、"*"は直前の文字の繰り返しを許容
-        
+
         @lru_cache
         def matches(s_idx, p_idx):
 
@@ -19,5 +20,5 @@ class Solution:
                 return skip_star or use_star
 
             return char_match and matches(s_idx + 1, p_idx + 1)
-        
+
         return matches(0, 0)

@@ -2,13 +2,13 @@ class Solution:
     def myAtoi(self, s: str) -> int:
         # 一個ずつ条件書いていく感じか？
         # 思いついたこと
-            # 一文字ずつ char として処理する
+        # 一文字ずつ char として処理する
 
         # スペースを飛ばす
         i = 0
         while i < len(s) and s[i] == " ":
             i += 1
-        
+
         # 文字列の最後に到達していないか
         if i == len(s):
             return 0
@@ -20,15 +20,15 @@ class Solution:
         # 符号チェック
         sign = 1
         if s[i] == "-":
-            sign = - 1
+            sign = -1
             i += 1
         elif s[i] == "+":
             i += 1
 
         # 数字取得
         num = 0
-        INT_MAX = 2 ** 31 - 1
-        INT_MIN = - 2 ** 31
+        INT_MAX = 2**31 - 1
+        INT_MIN = -(2**31)
 
         while i < len(s) and s[i].isdigit():
             digit = int(s[i])
@@ -37,7 +37,7 @@ class Solution:
                 if sign == 1:
                     return INT_MAX
                 return INT_MIN
-            
+
             num = num * 10 + digit
             i += 1
 

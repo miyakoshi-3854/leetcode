@@ -14,11 +14,13 @@ two pointerね
 文頭、文末にイテラブルを用意
 
 """
+
 import re
+
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        sanitized = re.sub(r'[^a-z0-9]', '', s.lower())
+        sanitized = re.sub(r"[^a-z0-9]", "", s.lower())
 
         l, r = 0, len(sanitized) - 1
         while l < r:

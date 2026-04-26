@@ -17,7 +17,7 @@ class Solution:
             head.next = None
             stack.append(head)
             head = next_node
-            
+
             if len(stack) == k:
                 for _ in range(k):
                     tail.next = stack.pop()

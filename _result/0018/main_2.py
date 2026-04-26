@@ -10,7 +10,7 @@ class Solution:
             for j in range(i + 1, len(nums)):
                 if j > i + 1 and nums[j] == nums[j - 1]:
                     continue
-                
+
                 l, r = j + 1, len(nums) - 1
                 while l < r:
                     total = nums[i] + nums[j] + nums[l] + nums[r]
