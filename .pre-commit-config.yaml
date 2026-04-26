@@ -4,4 +4,5 @@ repos:
     hooks:
         - id: ruff-check
           args: [ --fix ]
+          exclude: ^_result/
         - id: ruff-format
