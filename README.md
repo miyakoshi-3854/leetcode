@@ -1,6 +1,8 @@
 # leetcode
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/miyakoshi-3854)
+<a href="https://leetcode.com/u/miyakoshi-3854/">
+    <img src="https://leetcard.jacoblin.cool/miyakoshi-3854" />
+</a>
 
 ## 📝概要
 
