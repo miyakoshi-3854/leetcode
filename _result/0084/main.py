@@ -2,7 +2,7 @@
 84. Largest Rectangle in Histogram
 
 条件
-
+有効な四角形を求める
 
 思考
 stack使う
