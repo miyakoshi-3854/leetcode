@@ -4,53 +4,54 @@
     <img src="https://leetcard.jacoblin.cool/miyakoshi-3854" />
 </a>
 
-## 📝概要
+## Overview
 
-leetcode用 python環境
+Python environment for LeetCode practice.
 
-## 🛠️環境構築
+## Setup
 
-### 1. [`mise`](https://mise.jdx.dev/getting-started.html)をインストールする
+### 1. Install [`mise`](https://mise.jdx.dev/getting-started.html)
 
-### 2. 下記コマンドを実行
+### 2. Run
 
 ```bash
 mise run setup
 ```
 
-## 🚀使い方
+## Usage
 
-### 1. 問題を解く
+### 1. Solve a problem
 
-./main.pyを編集して問題を解く。
+Edit `main.py` and run:
 
 ```bash
 mise run p
 ```
 
-### 2. 回答を保存
+### 2. Save your answer
 
 ```bash
 mise run sv
 ```
 
-問題 (例: `1.aaa-bbb`) を入力すると:
-- `_result/{problem}/main.py` に保存
-- 同じ `problem` を解いた場合に、`problem_2` のように保存される
-- 自動で `git commit`
-- `main.py`がテンプレートにリセット
+Enter the problem slug (e.g. `1.two-sum`) when prompted. This will:
 
-## 📂ディレクトリ構成
+- Save to `_result/{problem}/main.py`
+- Save as `main_2.py`, `main_3.py`, etc. if the problem was solved before
+- Commit automatically with git
+- Reset `main.py` to the template
 
-```bash
+## Directory Structure
+
+```
 .
-├── main.py                # 作業用メインファイル
-├── .mise.toml             # 開発ツール管理 (mise)
-├── .pre-commit-config.yaml # コードチェック自動化設定
+├── main.py                 # Working file
+├── .mise.toml              # Dev tool config (mise)
+├── .pre-commit-config.yaml # Pre-commit hooks
 ├── shell/
-│   └── solve.sh           # 解答保存用スクリプト
-├── _template/             # テンプレートファイル格納
-└── _result/               # 解答保存先
+│   └── solve.sh            # Save script
+├── _template/              # Template files
+└── _result/                # Saved answers
     └── {problem}/
         └── main.py
 ```
